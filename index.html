@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Ramdom Enconter System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body>
+        <div class="corpo1">
+            <header>
+                <div class="menu_bar">
+                    <div class="nome_criatura">
+                        <label for="">Nome</label>
+                        <input type="text" id="nome_head" readonly>
+                    </div>
+                    <button>Analise</button>
+                </div>
+            </header>
+         <div class="display">
+            <main>
+                <div class="tela" id="tela">
+                    <div class="tela_background" id="tela_background">
+                        <img src="img/background_florest.png" alt="background_florest" id="background">
+                    </div>
+                        <img src="img/lanterna.gif" alt="lanterna" id="lanterna">
+                        <img src="img/slime_girl.png" alt="slime_girl" id="slime_girl">
+                        <img src="img/slash_magic.gif" alt="slash_magic" id="slash_magic">
+                    <div class="personagem_dialogo" id="nome_personagem_dialogo">
+                    </div>   
+                    <div class="dialogo" id="caixa_dialogo">
+                        <div class="dialogo_text" id="dialogo_text">
+                        </div>
+                    </div>
+                </div>
+                <div class="button_interactive">
+                    <button id="andar">Andar</button>
+                    <button id="atacar">Atacar</button>
+                    <button>Habilidade</button>
+                    <button id="fugir">Fugir</button>
+                </div>
+                </main>
+                <div class="main2">
+                    
+                    <div class="status_personagem">
+                        <div class="status_separados">
+                            <p>Kimiko</P>
+                            <p id="level"></p>
+                       </div>
+                        <div class="personagem" id="img_personagem">
+                            <img src="/img/rosto_personagem.png" alt="rosto_personagem">               
+                        </div>
+                        <div class="HP">
+                            <p>HP</p>
+                            <div class="vida" id="vida">
+                            
+                            </div>
+                        </div>     
+                        <div class="barra_de_vida">
+                            <div class="cor_barra_hp" id="barra_de_vida">
+
+                            </div>
+                        </div>
+                        <div class="MP">
+                            <p>MP</p>
+                            <div class="mana" id="mana">
+                        
+                            </div>
+                        </div>                        
+                        <div class="barra_de_mana">
+                            <div class="cor_barra_mana" id="barra_de_mana">
+
+                            </div>
+                        </div>
+                        <div class="XP">
+                            <p>XP</p>
+                            <div class="experiencia" id="experiencia">
+                              
+                            </div>
+                        </div>
+                        <div class="barra_de_xp">
+                            <div class="cor_barra_xp" id="barra_de_xp">
+
+                            </div>
+                        </div>
+                    </div>
+             </div>
+         </div>
+         
+          <footer>
+                <div class="save">
+                  <button>Save</button>
+                  <button>Load</button>
+                  <button>Song</button>
+                </div>
+                <div class="main_console_log">
+                    <div class="console_p">
+                      <p>Console Log</p>
+                    </div>
+                    <div class="console_log" id="console_log">
+                    
+                    </div>
+                </div>
+         </footer>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
